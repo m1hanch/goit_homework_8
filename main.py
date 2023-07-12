@@ -49,7 +49,7 @@ def get_birthdays_per_week(users: list)->None:
 
     #Виведення імен для кожного дня від Понеділка до П'ятниці
     for day,names in res_dict.items():
-        if day!='Saturday' and day!='Sunday':
+        if day!='Saturday' and day!='Sunday' and res_dict[day]!='':
             print(day,names)
 
     #Виведення імен для наступного понеділка
